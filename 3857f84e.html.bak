@@ -212,14 +212,14 @@
             }
         }
 		//电机转速控制
-		$("#motorCtrl").click(function() {
+	/*	$("#motorCtrl").click(function() {
 			alert("123123");
 			var topic = device_id+'/in';
             var commond;
             var swtimg = $("#switchbtn").attr("src");
             commond = '{"motor_Rev":'+motorRev.text+'}';
             client.publish(topic, commond);
-        });
+        });*/
 
         // 控制按钮显示的事件
         $("#switchbtn").click(function() {
