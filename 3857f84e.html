@@ -213,11 +213,12 @@
         }
 		//电机转速控制
 		$("#motorCtrl").click(function() {
-			alert("123123");
 			var topic = device_id+'/in';
             var commond;
             var swtimg = $("#switchbtn").attr("src");
-            commond = '{"motor_Rev":'+motorRev.text+'}';
+            commond = '{"motor_Rev":'+motorRev.value+'}';
+			alert(motorRev.value)
+			alert(motorRev.text)
             client.publish(topic, commond);
         });
 
