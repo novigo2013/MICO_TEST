@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
-    <title>设备联动</title>
+<title>设备联动</title>
     <style>
         *{margin:0px;padding:0px;}
         body{
@@ -75,6 +75,10 @@
             text-align: center;
             box-shadow: 3px 3px 3px #e1e1e1;
         }
+    .content .motorCtrl form table tr th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+}
     </style>
 </head>
 <body>
@@ -91,7 +95,7 @@
                     <td valign="middle" align="left">&nbsp;&nbsp;<span>湿度</span><br/>&nbsp;&nbsp;<span class="humicls" id="humiid">42%</span></td>
                 </tr>
             </table>
-        </div>
+      </div>
         <div class="switrgbhow">
           <table width="100%">
             <tr align="center" height="114px">
@@ -105,9 +109,13 @@
         </div>
         <div class="motorCtrl">
           <form name="form1" method="post" action="">
-            <label for="motorRev"></label>
-            <input type="text" name="motorRev" id="motorRev">
-            <input type="button" id="motorCtrl"  value="提交">
+            <table width="100%" height="118" border="1">
+              <tr>
+                <th width="50%">电机转速控制</th>
+                <td width="50%" align="center"><input name="motorRev" type="text" id="motorRev" value="0" size="10" maxlength="3">
+                     <input type="button" id="motorCtrl"  value="提交"></td>
+              </tr>
+            </table>
           </form>
         </div>
         <!-- <div class="humihis">
